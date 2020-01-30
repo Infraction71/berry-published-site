@@ -1,4 +1,3 @@
-# Berry published site
 
 ## Repository links:
 
