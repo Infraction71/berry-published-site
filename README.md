@@ -24,3 +24,4 @@ This site is to give you a general overview of both myself, as well as some usef
 ## Contributors
 
 This site was made and currently maintained by Matthew Berry, a Junior CSIS Student. Sometimes the world is too negative. Here is a picture I took of a sunset in Vancouver to remind you that there are still awesome things in ths world.
+![Sunset by Matthew Berry](https://github.com/Infraction71/berry-published-site/raw/master/sunset.jpg)
