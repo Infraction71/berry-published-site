@@ -1,4 +1,45 @@
+/* ok I could link all (checks notes...) 30+ W3School pages I used and I'd probably still
+miss at least 5 more. So I'm just going to do this once: W3schools was used... alot. S */
+header{
+    display: flex;  
+    justify-content: left;
+    background-color: black;
+    color: white;
+    font-size: 75px;
+}
+nav{
+    background-color: black;
+    width: 100%;
+    display: felx;
+}
+.navigationroute{
+    
+    display: inline-flex;
+    flex-basis: 65%;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    list-style: none;
+   
+
+}
+nav ul li{
+    background-color: white;
+    color: black;
+    display: inline-block;
+    padding: 8px;
+    margin:10px
+    flex-basis: 33%;
+
+}
+#profilepicture{
+    border-radius: 50%;
+    height: 12%;
+    width: 12%;
+    align-content: left;
+    padding-left: 5px;
+}
 body{
-    background-color: lightblue;
-    padding-top: 5rem;
+    
+   
 }
