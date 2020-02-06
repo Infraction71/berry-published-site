@@ -5,6 +5,7 @@ header{
     background-color: black;
     color: white;
     font-size: 75px;
+    align-items: center;
 }
 nav{
     background-color: black;
