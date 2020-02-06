@@ -1,5 +1,4 @@
-/* ok I could link all (checks notes...) 30+ W3School pages I used and I'd probably still
-miss at least 5 more. So I'm just going to do this once: W3schools was used... alot. S */
+
 header{
     display: flex;  
     justify-content: left;
@@ -12,7 +11,7 @@ nav{
     width: 100%;
     display: felx;
 }
-.navigationroute{
+nav .navigationroute{
     
     display: inline-flex;
     flex-basis: 65%;
@@ -23,14 +22,20 @@ nav{
    
 
 }
+.main_stuff{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 7px;
+}
 nav ul li{
     background-color: white;
     color: black;
     display: inline-block;
     padding: 8px;
-    margin:10px
-    flex-basis: 33%;
-
+    margin:20px;
+    flex-basis: 30%;
+    align-items: center;
+    text-align: center;
 }
 #profilepicture{
     border-radius: 50%;
@@ -39,7 +44,31 @@ nav ul li{
     align-content: left;
     padding-left: 5px;
 }
-body{
-    
+main{
+    font-size: 20px;
    
 }
+
+hr{
+    size: 10px;
+    color: black;
+}
+
+#sidepic{
+    margin-left: 4%;
+    width: 17%;
+    height: 17%;
+}
+aside{
+    float: right;
+    width:25%;
+}
+
+article{
+    width: 75%;
+}
+footer{
+    background-color: black;
+    color:white;
+}
+
