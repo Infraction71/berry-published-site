@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- https://mdbootstrap.com/md-bootstrap-cdn/ -->
+<!-- Material Design for Bootstrap fonts and icons -->
+
+<head>
+    <meta charset="UTF-8" />
+    <!---Tells web browswer what the site should be decoded in or coded in-->
+    <title>Matthew Berry: Home</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <!--It's left-justified so I need to make the left-most item go first.-->
+        <img src="profilelinkedin.png" id="profilepicture">
+        <h1>Matthew Berry</h1>
+
+    </header>
+
+    <nav>
+        <ul class="navigationroute">
+            <li><a href="index.html" rel="noopener">Home</a></li>
+            <li><a href="contact.html" rel="noopener">Contact Me!</a></li>
+            <li><a href="mphconversion.html" rel="noopener">MPH converter</a></li>
+        </ul>
+    </nav>
+
+    <main id="fromstyle">
+
+        <h2>Convert MPH to KPH</h2>
+        <form>
+            <label>Speed: </label><input type="text" name="speed"><br>
+            
+            <input type="submit" value="Convert to MPH"><br>
+           <input type="submit" value="Convert to KPH">
+        </form>
+        <p>The converted speed is: </p>
+    </main>
+    <footer>
+        <p>Photos and code: &copy;2020 Matthew Berry</p>
+    </footer>
+</body>
+
+</html>
