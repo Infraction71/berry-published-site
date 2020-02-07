@@ -10,7 +10,7 @@ header{
 nav{
     background-color: black;
     width: 100%;
-    display: felx;
+   
 }
 nav .navigationroute{
     
@@ -25,6 +25,8 @@ nav .navigationroute{
 }
 header h1{
     text-align: center;
+    padding-left: 350px;
+    font-size: 70px;
 }
 .main_stuff{
     font-size: 20px;
@@ -45,7 +47,7 @@ nav ul li{
     border-radius: 50%;
     height: 12%;
     width: 12%;
-    align-content: left;
+    
     padding-left: 5px;
 }
 main{
@@ -54,7 +56,6 @@ main{
 }
 
 hr{
-    size: 10px;
     color: black;
 }
 
