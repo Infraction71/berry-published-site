@@ -3,7 +3,7 @@
 ## Repository links:
 
 - [Repo](https://github.com/Infraction71/berry-published-site)
-- [Site](https://infraction71.github.io/)
+- [Site](https://infraction71.github.io/berry-published-site/)
 
 ## About
 This site is to give you a general overview of both myself, as well as some useful tools for web development. It also has a secondary function for you to make fun of whatever spelling mistakes I will inevitably make.
@@ -11,8 +11,8 @@ This site is to give you a general overview of both myself, as well as some usef
 ## Recommended Tools
 
 - Basic knowledge of [git](https://github.com/).
-- Some text way to edit text. (Github can work for now)
-- Knowledge of Either HTML and CSS, or Markdown
+- Some text way to edit text. (I used VSC)
+- Knowledge of HTML, CSS, and Markdown
 
 ## Useful Resources
 
@@ -21,7 +21,7 @@ This site is to give you a general overview of both myself, as well as some usef
 - If you are a windows user, [chocolatey](https://chocolatey.org/) is an extremly useful tool for downloading resources
 - [This site gives a great crash course in Markdown](https://www.markdowntutorial.com/)
 
-## Resources used to make this cite:
+## Resources used to make this site:
 https://www.w3schools.com/css/css_dimension.asp
 https://www.w3schools.com/cssref/sel_class.asp
 https://www.w3schools.com/css/css3_flexbox.asp
