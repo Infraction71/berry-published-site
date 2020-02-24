@@ -16,6 +16,7 @@
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/css/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="main.js"></script>
 
 </head>
 
@@ -39,12 +40,12 @@
 
         <h2>Convert MPH to KPH</h2>
         <form>
-            <label>Speed: </label><input type="text" name="speed"><br>
+            <label>Speed: </label><input type="number" name="speed"><br>
             
-            <input type="submit" value="Convert to MPH"><br>
-           <input type="submit" value="Convert to KPH">
+            <input type="submit" value="Convert to MPH"  onclick="convertToMPH()"><br>
+           <input type="submit" value="Convert to KPH" onclick="convertToKPH()">
         </form>
-        <p>The converted speed is: </p>
+        <p name="convertedSpeed">The converted speed is: </p>
     </main>
     <footer>
         <p>Photos and code: &copy;2020 Matthew Berry</p>
