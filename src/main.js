@@ -64,7 +64,13 @@ async function  convertToSW(){
   }
   else{
     //alert("About to enter updateWithShipp");
-    let ship = await updateWithShip();
+    await toShip(shippNum);
+   // localStorage.setItem("sw", 0); //This line is for resetting local storage on a debug. 
+  }
+
+  async function toShip(shipOut){
+    //alert("About to enter updateWithShipp");
+    let ship = await updateWithShip(shipOut);
     document.getElementById("convertedSpeed").innerHTML = ship.toString();
     let numTimes=  parseInt(localStorage.getItem("sw"));
     numTimes +=1;

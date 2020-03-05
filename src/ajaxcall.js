@@ -17,11 +17,11 @@ const getShipp = async (shippNum) => {
 }
 
 // interact with DOM
-const updateWithShip = async () => {
+const updateWithShip = async (shipNumm) => {
   //alert("In updateWithShipp")
   try {
     //  alert("In the try of the updateWithShipp")
-     let  shipNumm = parseInt(document.getElementById("speed").value);
+    //  let  shipNumm = parseInt(document.getElementById("speed").value);
 
     let obj = await getShipp(shipNumm) //fetches and loads it in one step. 
     //ok now we need to parse this thing.
