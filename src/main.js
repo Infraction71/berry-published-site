@@ -1,29 +1,55 @@
 function convertToMPH(){
-//alert("Method called");
-    const CONVERSION = 0.621371;
-    const MESSAGE = "The converted speed is: "; 
-  //  alert('We are about to get the value');
+  const MESSAGE = "The converted speed is: "; 
+
     let speedInMPH = parseFloat(document.getElementById("speed").value);
   //  alert('We Got the value: '+ speedInMPH);
-    let convertedSpeed = speedInMPH*CONVERSION;
-  //  alert('We did a conversion');
+    
+    let convertedSpeed = toMPH(speedInMPH);
     document.getElementById("convertedSpeed").innerHTML = MESSAGE + convertedSpeed + "MPH";
-    localStorage.setItem("mph",parseInt(localStorage.getItem("mph")+1));
+    //Local Storage is being a pain, so we need to break it into two steps.
+    let numTimes=  parseInt(localStorage.getItem("kph"));
+    numTimes +=1;
+    localStorage.setItem("kph",numTimes);
 }
 
 function convertToKPH(){
+  const MESSAGE = "The converted speed is: "; 
+
     //alert("Method called");
-
-    const CONVERSION = 1.60934;
-    const MESSAGE = "The converted speed is: "; 
-   // alert('We are about to get the value');
     let speedInKPH = parseFloat(document.getElementById("speed").value);
-   // alert('We Got the value: '+ speedInMPH);
-    let convertedSpeed = speedInKPH*CONVERSION;
-   // alert('We did a conversion!');
-
+    //  alert('We Got the value: '+ speedInMPH);
+    let convertedSpeed = toKPH(speedInKPH);
     document.getElementById("convertedSpeed").innerHTML = MESSAGE + convertedSpeed + "KPH";
-    localStorage.setItem("kph",parseInt(localStorage.getItem("kph")+1));
+    let numTimes=  parseInt(localStorage.getItem("mph"));
+    numTimes +=1;
+    localStorage.setItem("mph",numTimes);
+    //  localStorage.setItem("kph", 0);
+    //  localStorage.setItem("mph", 0);
+    
+}
+
+function toMPH(speedIN){
+ //alert("Method called");
+ const CONVERSION = 0.621371;
+//  alert('We are about to get the value');
+
+//  alert('We Got the value: '+ speedInMPH);
+ return speedIN*CONVERSION;
+//  alert('We did a conversion');
+
+}
+
+function toKPH(speedIN){
+  //alert("Method called");
+
+  const CONVERSION = 1.60934;
+ // alert('We are about to get the value');
+  
+ // alert('We Got the value: '+ speedInMPH);
+  return  speedIN*CONVERSION;
+ // alert('We did a conversion!');
+
+ 
 }
 
 function convertToSW(){
