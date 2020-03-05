@@ -8,6 +8,7 @@ function convertToMPH(){
     let convertedSpeed = speedInMPH*CONVERSION;
   //  alert('We did a conversion');
     document.getElementById("convertedSpeed").innerHTML = MESSAGE + convertedSpeed + "MPH";
+    localStorage.setItem("mph",parseInt(localStorage.getItem("mph")+1));
 }
 
 function convertToKPH(){
@@ -22,26 +23,41 @@ function convertToKPH(){
    // alert('We did a conversion!');
 
     document.getElementById("convertedSpeed").innerHTML = MESSAGE + convertedSpeed + "KPH";
+    localStorage.setItem("kph",parseInt(localStorage.getItem("kph")+1));
 }
 
-function convertToKPH(){
+function convertToSW(){
   //alert("Method called");
 
-  const CONVERSION = 1.60934;
-  const MESSAGE = "The converted speed is: "; 
- // alert('We are about to get the value');
+  
+ //alert('We are about to get the value');
   let shippNum = parseInt(document.getElementById("speed").value);
   if(shippNum <0 || shippNum> 42){ //42 is the uper limit of SWAPIs starship refrence. 
     document.getElementById("convertedSpeed").innerHTML = "Starship number must be between 0 and 41, inclusive.";
-    return
-    let jsonURI = 'https://swapi.co/api/starships/' + shippNum.toString() + "/";
+    return;
   }
   else{
-   
+    alert("About to enter updateWithShipp");
+    let ship = updateWithShip();
+    document.getElementById("convertedSpeed").innerHTML = ship;
+    localStorage.setItem("sw",parseInt(localStorage.getItem("sw")+1));
+
 
   }
 
 }
 
-const
+//local storage access
+function convertToLCS(){
+  //alert("Method called");
+
+  
+  let msg = "You have requested MPH " + localStorage.getItem("mph") + " times, KPH " + localStorage.getItem("kph") +" times and Starwars "
+        + localStorage.getItem("sw") +" times"; 
+ 
+
+  document.getElementById("convertedSpeed").innerHTML = msg;
+}
+
+
 

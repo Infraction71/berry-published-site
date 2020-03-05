@@ -21,7 +21,7 @@ This site is to give you a general overview of both myself, as well as some usef
 - If you are a windows user, [chocolatey](https://chocolatey.org/) is an extremly useful tool for downloading resources
 - [This site gives a great crash course in Markdown](https://www.markdowntutorial.com/)
 
-## Resources used to make this site:
+## We must make an offering to the Google Gods:
 https://www.w3schools.com/css/css_dimension.asp
 https://www.w3schools.com/cssref/sel_class.asp
 https://www.w3schools.com/css/css3_flexbox.asp
@@ -37,6 +37,7 @@ https://fontawesome.com/v4.7.0/icon/github
 https://fontawesome.com/icons/linkedin-in
 https://fontawesome.com/icons/facebook-f?style=brands
 https://www.w3schools.com/html/html_forms.asp
+https://www.w3schools.com/js/js_json_parse.asp
 
 
 ## Contributors
