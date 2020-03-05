@@ -52,7 +52,7 @@ function toKPH(speedIN){
  
 }
 
-async function  convertToSW(){
+function convertToSW(){
   //alert("Method called");
 
   
@@ -63,13 +63,12 @@ async function  convertToSW(){
     return;
   }
   else{
-    //alert("About to enter updateWithShipp");
-    let ship = await updateWithShip();
-    document.getElementById("convertedSpeed").innerHTML = ship.toString();
-    let numTimes=  parseInt(localStorage.getItem("sw"));
-    numTimes +=1;
-    localStorage.setItem("sw",numTimes);
-   // localStorage.setItem("sw", 0); //This line is for resetting local storage on a debug. 
+    alert("About to enter updateWithShipp");
+    let ship = updateWithShip();
+    document.getElementById("convertedSpeed").innerHTML = ship;
+    localStorage.setItem("sw",parseInt(localStorage.getItem("sw")+1));
+
+
   }
 
 }
