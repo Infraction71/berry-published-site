@@ -27,12 +27,12 @@ function convertToKPH(){
     //  localStorage.setItem("mph", 0);
     
 }
-
+//Testable funcitons
 function toMPH(speedIN){
  //alert("Method called");
  const CONVERSION = 0.621371;
 //  alert('We are about to get the value');
-
+if(speedIN <0) return null;
 //  alert('We Got the value: '+ speedInMPH);
  return speedIN*CONVERSION;
 //  alert('We did a conversion');
@@ -44,7 +44,7 @@ function toKPH(speedIN){
 
   const CONVERSION = 1.60934;
  // alert('We are about to get the value');
-  
+ if(speedIN <0) return null;
  // alert('We Got the value: '+ speedInMPH);
   return  speedIN*CONVERSION;
  // alert('We did a conversion!');
