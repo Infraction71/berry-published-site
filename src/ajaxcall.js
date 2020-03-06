@@ -35,7 +35,7 @@ const updateWithShip = async (shipNumm) => {
      
       return "The ship's records have been destroyed"
     }
-    let answer = "The " + obj.name + " has a max speed of " + obj.max_atmosphering_speed +" !";
+    let answer = "The " + obj.name + " has a max speed of " + obj.max_atmosphering_speed +"!";
     return answer;
   } 
   catch (error) { 

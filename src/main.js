@@ -5,7 +5,7 @@ function convertToMPH(){
   //  alert('We Got the value: '+ speedInMPH);
     
     let convertedSpeed = toMPH(speedInMPH);
-    document.getElementById("convertedSpeed").innerHTML = MESSAGE + convertedSpeed + "MPH";
+    document.getElementById("convertedSpeed").innerHTML = MESSAGE + convertedSpeed + " MPH";
     //Local Storage is being a pain, so we need to break it into two steps.
     let numTimes=  parseInt(localStorage.getItem("mph"))||0;
     numTimes +=1;
@@ -19,7 +19,7 @@ function convertToKPH(){
     let speedInKPH = parseFloat(document.getElementById("speed").value);
     //  alert('We Got the value: '+ speedInMPH);
     let convertedSpeed = toKPH(speedInKPH);
-    document.getElementById("convertedSpeed").innerHTML = MESSAGE + convertedSpeed + "KPH";
+    document.getElementById("convertedSpeed").innerHTML = MESSAGE + convertedSpeed + " KPH";
     let numTimes=  parseInt(localStorage.getItem("kph"))||0;
     numTimes +=1;
     localStorage.setItem("kph",numTimes);
