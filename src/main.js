@@ -7,7 +7,7 @@ function convertToMPH(){
     let convertedSpeed = toMPH(speedInMPH);
     document.getElementById("convertedSpeed").innerHTML = MESSAGE + convertedSpeed + "MPH";
     //Local Storage is being a pain, so we need to break it into two steps.
-    let numTimes=  parseInt(localStorage.getItem("kph"));
+    let numTimes=  parseInt(localStorage.getItem("kph"))||0;
     numTimes +=1;
     localStorage.setItem("kph",numTimes);
 }
@@ -20,7 +20,7 @@ function convertToKPH(){
     //  alert('We Got the value: '+ speedInMPH);
     let convertedSpeed = toKPH(speedInKPH);
     document.getElementById("convertedSpeed").innerHTML = MESSAGE + convertedSpeed + "KPH";
-    let numTimes=  parseInt(localStorage.getItem("mph"));
+    let numTimes=  parseInt(localStorage.getItem("mph"))||0;
     numTimes +=1;
     localStorage.setItem("mph",numTimes);
     //  localStorage.setItem("kph", 0);
@@ -63,6 +63,7 @@ async function  convertToSW(){
   }
   else{
     //alert("About to enter updateWithShipp");
+    document.getElementById("convertedSpeed").innerHTML = "Getting ship fact. Stand by."
     await toShip(shippNum);
    // localStorage.setItem("sw", 0); //This line is for resetting local storage on a debug. 
   }
@@ -71,7 +72,7 @@ async function  convertToSW(){
     //alert("About to enter updateWithShipp");
     let ship = await updateWithShip(shipOut);
     document.getElementById("convertedSpeed").innerHTML = ship.toString();
-    let numTimes=  parseInt(localStorage.getItem("sw"));
+    let numTimes=  parseInt(localStorage.getItem("sw")) ||0;
     numTimes +=1;
     localStorage.setItem("sw",numTimes);
    // localStorage.setItem("sw", 0); //This line is for resetting local storage on a debug. 
