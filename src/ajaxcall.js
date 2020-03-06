@@ -27,7 +27,14 @@ const updateWithShip = async (shipNumm) => {
     //ok now we need to parse this thing.
  //   alert("Attempting to parse ");
     
-    //alert("Parsed");
+   
+     let bad = "undefined";
+     
+     
+    if(obj.name==undefined){ //This was painful to figure out. Check to see if obj.name is actually true. 
+     
+      return "The ship's records have been destroyed"
+    }
     let answer = "The " + obj.name + " has a max speed of " + obj.max_atmosphering_speed +" !";
     return answer;
   } 
