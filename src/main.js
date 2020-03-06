@@ -38,7 +38,7 @@ if(speedIN <0) return null;
 //  alert('We did a conversion');
 
 }
-
+//For testable cdoe 
 function toKPH(speedIN){
   //alert("Method called");
 
@@ -51,7 +51,6 @@ function toKPH(speedIN){
 
  
 }
-
 async function  convertToSW(){
   //alert("Method called");
 
@@ -67,7 +66,7 @@ async function  convertToSW(){
     await toShip(shippNum);
    // localStorage.setItem("sw", 0); //This line is for resetting local storage on a debug. 
   }
-
+  //For testable code
   async function toShip(shipOut){
     //alert("About to enter updateWithShipp");
     let ship = await updateWithShip(shipOut);

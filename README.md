@@ -12,7 +12,7 @@ This site is to give you a general overview of both myself, as well as some usef
 
 - Basic knowledge of [git](https://github.com/).
 - Some text way to edit text. (I used VSC)
-- Knowledge of HTML, CSS, and Markdown
+- Knowledge of HTML, CSS, Javascript(with AJAX and Qunit) and Markdown
 
 ## Useful Resources
 
@@ -38,7 +38,7 @@ https://fontawesome.com/icons/linkedin-in
 https://fontawesome.com/icons/facebook-f?style=brands
 https://www.w3schools.com/html/html_forms.asp
 https://www.w3schools.com/js/js_json_parse.asp
-
+https://github.com/profcase/js-gui-ajax
 
 ## Contributors
 
